@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>We Will Never Forget</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%87%BA%F0%9F%87%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#0a1330; --sky2:#1b2a5c; --ink:#f3f1ea; --muted:#e4e6ea; --red:#b22234; --blue:#3c3b6e; --white:#ffffff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root:not([data-theme="light"]){color-scheme:dark}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--sky:#070d24}}
+:root[data-theme="dark"]{--sky:#070d24}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{
+  margin:0; min-height:100%;
+  background:#333a48;
+  color:var(--ink);
+  font-family:"Libre Baskerville", Georgia, "Times New Roman", serif;
+  text-align:center;
+  overflow-x:hidden;
+}
+#stars{position:fixed; left:0; right:0; top:0; height:300vh; z-index:-1; pointer-events:none;
+  background:#333a48 url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22300%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23333a48%22/%3E%3Ccircle%20cx%3D%2297.1%22%20cy%3D%2245.3%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.91%22/%3E%3Ccircle%20cx%3D%2228.2%22%20cy%3D%22174.8%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.54%22/%3E%3Ccircle%20cx%3D%22125.5%22%20cy%3D%2272.2%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.91%22/%3E%3Ccircle%20cx%3D%2237.1%22%20cy%3D%2267.0%22%20r%3D%220.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.79%22/%3E%3Ccircle%20cx%3D%2214.9%22%20cy%3D%2266.3%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.71%22/%3E%3Ccircle%20cx%3D%22162.2%22%20cy%3D%22171.3%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.79%22/%3E%3Ccircle%20cx%3D%22191.7%22%20cy%3D%22111.7%22%20r%3D%220.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.53%22/%3E%3Ccircle%20cx%3D%2261.8%22%20cy%3D%22204.1%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.73%22/%3E%3Ccircle%20cx%3D%22277.0%22%20cy%3D%22108.5%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.85%22/%3E%3Ccircle%20cx%3D%2273.2%22%20cy%3D%22172.3%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.86%22/%3E%3Ccircle%20cx%3D%2286.4%22%20cy%3D%22294.1%22%20r%3D%220.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.71%22/%3E%3Ccircle%20cx%3D%22227.1%22%20cy%3D%2245.6%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.52%22/%3E%3Ccircle%20cx%3D%22200.5%22%20cy%3D%22229.4%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.85%22/%3E%3Ccircle%20cx%3D%22178.3%22%20cy%3D%22174.0%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.92%22/%3E%3Ccircle%20cx%3D%22283.4%22%20cy%3D%22142.2%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.87%22/%3E%3Ccircle%20cx%3D%2292.9%22%20cy%3D%22173.4%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.86%22/%3E%3Ccircle%20cx%3D%22266.1%22%20cy%3D%22104.1%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.58%22/%3E%3Ccircle%20cx%3D%2235.1%22%20cy%3D%2217.7%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.87%22/%3E%3Ccircle%20cx%3D%22119.4%22%20cy%3D%22275.0%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.58%22/%3E%3Ccircle%20cx%3D%22120.5%22%20cy%3D%2283.4%22%20r%3D%220.6%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.93%22/%3E%3Ccircle%20cx%3D%2283.5%22%20cy%3D%22124.6%22%20r%3D%221%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.98%22/%3E%3Ccircle%20cx%3D%2245.3%22%20cy%3D%2252.9%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.51%22/%3E%3Ccircle%20cx%3D%22249.3%22%20cy%3D%2254.7%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.57%22/%3E%3Ccircle%20cx%3D%22160.4%22%20cy%3D%22182.9%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.85%22/%3E%3Ccircle%20cx%3D%22154.6%22%20cy%3D%22185.3%22%20r%3D%220.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.95%22/%3E%3Ccircle%20cx%3D%22234.0%22%20cy%3D%22262.4%22%20r%3D%221.2%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.70%22/%3E%3Ccircle%20cx%3D%2231.1%22%20cy%3D%22190.3%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.53%22/%3E%3Ccircle%20cx%3D%2262.6%22%20cy%3D%2248.7%22%20r%3D%221%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.53%22/%3E%3Ccircle%20cx%3D%220.1%22%20cy%3D%2245.4%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.81%22/%3E%3Ccircle%20cx%3D%2221.1%22%20cy%3D%2262.4%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.82%22/%3E%3Ccircle%20cx%3D%22286.6%22%20cy%3D%22180.7%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.56%22/%3E%3Ccircle%20cx%3D%22146.4%22%20cy%3D%22293.3%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.66%22/%3E%3Ccircle%20cx%3D%2243.2%22%20cy%3D%22224.9%22%20r%3D%220.8%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.91%22/%3E%3Ccircle%20cx%3D%2248.4%22%20cy%3D%226.9%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.85%22/%3E%3Ccircle%20cx%3D%22274.2%22%20cy%3D%22227.4%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.85%22/%3E%3Ccircle%20cx%3D%2278.3%22%20cy%3D%22110.0%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.89%22/%3E%3Ccircle%20cx%3D%22159.8%22%20cy%3D%22233.7%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.81%22/%3E%3Ccircle%20cx%3D%22236.5%22%20cy%3D%22227.5%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.91%22/%3E%3Ccircle%20cx%3D%22222.0%22%20cy%3D%2268.0%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.87%22/%3E%3Ccircle%20cx%3D%22296.9%22%20cy%3D%22237.0%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.60%22/%3E%3Ccircle%20cx%3D%22181.5%22%20cy%3D%22103.3%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.54%22/%3E%3Ccircle%20cx%3D%2230.6%22%20cy%3D%22141.0%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.74%22/%3E%3Ccircle%20cx%3D%22295.6%22%20cy%3D%22183.1%22%20r%3D%220.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.95%22/%3E%3Ccircle%20cx%3D%22103.2%22%20cy%3D%22192.9%22%20r%3D%220.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.89%22/%3E%3Ccircle%20cx%3D%22225.0%22%20cy%3D%22143.4%22%20r%3D%220.6%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.89%22/%3E%3Ccircle%20cx%3D%2299.8%22%20cy%3D%22240.2%22%20r%3D%221.2%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.70%22/%3E%3Ccircle%20cx%3D%22284.0%22%20cy%3D%22217.4%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.51%22/%3E%3Ccircle%20cx%3D%22177.2%22%20cy%3D%22139.6%22%20r%3D%220.6%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.91%22/%3E%3Ccircle%20cx%3D%22294.1%22%20cy%3D%22197.2%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.77%22/%3E%3Ccircle%20cx%3D%2239.3%22%20cy%3D%224.3%22%20r%3D%220.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.87%22/%3E%3Ccircle%20cx%3D%2241.8%22%20cy%3D%22296.0%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.51%22/%3E%3Ccircle%20cx%3D%2263.8%22%20cy%3D%22150.3%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.77%22/%3E%3Ccircle%20cx%3D%22250.3%22%20cy%3D%2218.3%22%20r%3D%221%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.83%22/%3E%3Ccircle%20cx%3D%22244.5%22%20cy%3D%22155.0%22%20r%3D%220.6%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.58%22/%3E%3Ccircle%20cx%3D%22153.2%22%20cy%3D%22261.8%22%20r%3D%220.6%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.50%22/%3E%3Ccircle%20cx%3D%22239.8%22%20cy%3D%2251.7%22%20r%3D%221.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.86%22/%3E%3Ccircle%20cx%3D%22166.9%22%20cy%3D%2297.8%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.94%22/%3E%3Ccircle%20cx%3D%2217.0%22%20cy%3D%2257.4%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.75%22/%3E%3Ccircle%20cx%3D%22168.5%22%20cy%3D%22228.0%22%20r%3D%220.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.66%22/%3E%3Ccircle%20cx%3D%22292.0%22%20cy%3D%22181.8%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.73%22/%3E%3Ccircle%20cx%3D%22160.0%22%20cy%3D%22143.4%22%20r%3D%220.7%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.94%22/%3E%3Ccircle%20cx%3D%22282.7%22%20cy%3D%2277.9%22%20r%3D%220.7%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.57%22/%3E%3Ccircle%20cx%3D%2236.5%22%20cy%3D%22132.6%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.71%22/%3E%3Ccircle%20cx%3D%2263.8%22%20cy%3D%2290.8%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.97%22/%3E%3Ccircle%20cx%3D%22193.0%22%20cy%3D%22109.9%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.98%22/%3E%3Ccircle%20cx%3D%2265.9%22%20cy%3D%22285.8%22%20r%3D%221.2%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.58%22/%3E%3Ccircle%20cx%3D%22200.3%22%20cy%3D%2267.1%22%20r%3D%221.2%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.70%22/%3E%3Ccircle%20cx%3D%22126.4%22%20cy%3D%22107.0%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.51%22/%3E%3Ccircle%20cx%3D%22166.2%22%20cy%3D%22132.1%22%20r%3D%220.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.67%22/%3E%3Ccircle%20cx%3D%22187.2%22%20cy%3D%22153.7%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.99%22/%3E%3Ccircle%20cx%3D%22236.5%22%20cy%3D%22291.5%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.63%22/%3E%3Ccircle%20cx%3D%2211.9%22%20cy%3D%22233.7%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.91%22/%3E%3Ccircle%20cx%3D%22254.9%22%20cy%3D%22202.8%22%20r%3D%220.8%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.57%22/%3E%3Ccircle%20cx%3D%22275.8%22%20cy%3D%22171.2%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.64%22/%3E%3Ccircle%20cx%3D%22239.9%22%20cy%3D%2255.0%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.97%22/%3E%3Ccircle%20cx%3D%22190.3%22%20cy%3D%22240.5%22%20r%3D%220.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.93%22/%3E%3Ccircle%20cx%3D%2220.0%22%20cy%3D%22258.8%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.67%22/%3E%3Ccircle%20cx%3D%22165.9%22%20cy%3D%22278.0%22%20r%3D%220.8%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.56%22/%3E%3Ccircle%20cx%3D%22158.1%22%20cy%3D%2271.5%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.63%22/%3E%3Ccircle%20cx%3D%2254.3%22%20cy%3D%22279.7%22%20r%3D%220.8%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.88%22/%3E%3Ccircle%20cx%3D%2287.0%22%20cy%3D%22150.0%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.67%22/%3E%3Ccircle%20cx%3D%225.4%22%20cy%3D%2275.1%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.87%22/%3E%3Ccircle%20cx%3D%22165.3%22%20cy%3D%2256.8%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.97%22/%3E%3Ccircle%20cx%3D%2231.9%22%20cy%3D%22245.7%22%20r%3D%221.2%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.77%22/%3E%3Ccircle%20cx%3D%22266.6%22%20cy%3D%22291.1%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.99%22/%3E%3Ccircle%20cx%3D%22102.8%22%20cy%3D%22249.7%22%20r%3D%220.6%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.99%22/%3E%3Ccircle%20cx%3D%22294.6%22%20cy%3D%22251.1%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.81%22/%3E%3Ccircle%20cx%3D%22264.0%22%20cy%3D%22129.2%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.83%22/%3E%3Ccircle%20cx%3D%22114.3%22%20cy%3D%22151.8%22%20r%3D%220.8%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.62%22/%3E%3Ccircle%20cx%3D%2287.9%22%20cy%3D%22137.8%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.72%22/%3E%3Ccircle%20cx%3D%2279.0%22%20cy%3D%22288.5%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.52%22/%3E%3Ccircle%20cx%3D%22264.7%22%20cy%3D%2265.4%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.67%22/%3E%3Ccircle%20cx%3D%2225.2%22%20cy%3D%2283.7%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.75%22/%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%2279.3%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.70%22/%3E%3Ccircle%20cx%3D%2212.5%22%20cy%3D%226.7%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.54%22/%3E%3Ccircle%20cx%3D%22287.3%22%20cy%3D%22256.0%22%20r%3D%220.6%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.69%22/%3E%3Ccircle%20cx%3D%2297.8%22%20cy%3D%22295.4%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.86%22/%3E%3Ccircle%20cx%3D%22193.0%22%20cy%3D%2213.1%22%20r%3D%221.2%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.57%22/%3E%3Ccircle%20cx%3D%22157.1%22%20cy%3D%22151.3%22%20r%3D%220.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.90%22/%3E%3Ccircle%20cx%3D%22213.4%22%20cy%3D%22286.8%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.52%22/%3E%3Ccircle%20cx%3D%2239.9%22%20cy%3D%22108.2%22%20r%3D%220.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.92%22/%3E%3Ccircle%20cx%3D%22167.6%22%20cy%3D%22188.3%22%20r%3D%220.7%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.63%22/%3E%3Ccircle%20cx%3D%22137.1%22%20cy%3D%2221.0%22%20r%3D%220.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.53%22/%3E%3Ccircle%20cx%3D%22221.0%22%20cy%3D%2275.7%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.62%22/%3E%3Ccircle%20cx%3D%22226.9%22%20cy%3D%2269.2%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.92%22/%3E%3Ccircle%20cx%3D%2223.0%22%20cy%3D%22273.1%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.81%22/%3E%3Ccircle%20cx%3D%22192.8%22%20cy%3D%2223.2%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.63%22/%3E%3Ccircle%20cx%3D%22223.0%22%20cy%3D%2291.3%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.74%22/%3E%3Ccircle%20cx%3D%22145.7%22%20cy%3D%22291.8%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.84%22/%3E%3Ccircle%20cx%3D%2287.3%22%20cy%3D%22155.0%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.73%22/%3E%3Ccircle%20cx%3D%2235.6%22%20cy%3D%22268.1%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.99%22/%3E%3Ccircle%20cx%3D%22280.9%22%20cy%3D%225.3%22%20r%3D%221.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.91%22/%3E%3Ccircle%20cx%3D%22290.4%22%20cy%3D%22134.8%22%20r%3D%220.8%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.60%22/%3E%3Ccircle%20cx%3D%22283.7%22%20cy%3D%2263.2%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.87%22/%3E%3Ccircle%20cx%3D%2278.5%22%20cy%3D%22107.9%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.85%22/%3E%3Ccircle%20cx%3D%2269.4%22%20cy%3D%22269.3%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.51%22/%3E%3Ccircle%20cx%3D%221.1%22%20cy%3D%22147.5%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.65%22/%3E%3Ccircle%20cx%3D%2242.2%22%20cy%3D%22103.2%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.92%22/%3E%3Ccircle%20cx%3D%220.5%22%20cy%3D%22225.2%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.97%22/%3E%3Ccircle%20cx%3D%2258.7%22%20cy%3D%223.5%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.69%22/%3E%3Ccircle%20cx%3D%22117.9%22%20cy%3D%22299.6%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.96%22/%3E%3Ccircle%20cx%3D%22226.7%22%20cy%3D%22256.3%22%20r%3D%220.8%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.53%22/%3E%3Ccircle%20cx%3D%22198.6%22%20cy%3D%22190.5%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.99%22/%3E%3Ccircle%20cx%3D%22130.9%22%20cy%3D%2294.7%22%20r%3D%221%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.94%22/%3E%3Ccircle%20cx%3D%22243.6%22%20cy%3D%22189.3%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.52%22/%3E%3Ccircle%20cx%3D%22219.7%22%20cy%3D%22135.3%22%20r%3D%220.6%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.74%22/%3E%3Ccircle%20cx%3D%22273.6%22%20cy%3D%22165.0%22%20r%3D%220.6%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.71%22/%3E%3Ccircle%20cx%3D%2284.5%22%20cy%3D%2276.7%22%20r%3D%220.8%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.83%22/%3E%3Ccircle%20cx%3D%2290.3%22%20cy%3D%22167.2%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.58%22/%3E%3Ccircle%20cx%3D%2248.5%22%20cy%3D%2262.4%22%20r%3D%221.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.61%22/%3E%3Ccircle%20cx%3D%22271.9%22%20cy%3D%22298.9%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.57%22/%3E%3Ccircle%20cx%3D%2257.7%22%20cy%3D%2227.2%22%20r%3D%221%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.55%22/%3E%3Ccircle%20cx%3D%2271.7%22%20cy%3D%2277.5%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.87%22/%3E%3Ccircle%20cx%3D%22123.8%22%20cy%3D%22124.2%22%20r%3D%220.7%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.64%22/%3E%3Ccircle%20cx%3D%22225.6%22%20cy%3D%22149.4%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.84%22/%3E%3Ccircle%20cx%3D%22158.8%22%20cy%3D%22237.1%22%20r%3D%220.7%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.64%22/%3E%3Ccircle%20cx%3D%2274.5%22%20cy%3D%22119.9%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.98%22/%3E%3Ccircle%20cx%3D%22254.6%22%20cy%3D%22261.9%22%20r%3D%220.5%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.52%22/%3E%3Ccircle%20cx%3D%22212.9%22%20cy%3D%22268.7%22%20r%3D%221.5%22%20fill%3D%22%23fff3c4%22%20fill-opacity%3D%220.74%22/%3E%3Ccircle%20cx%3D%2221.9%22%20cy%3D%22279.1%22%20r%3D%221.5%22%20fill%3D%22%23cfd8ff%22%20fill-opacity%3D%220.62%22/%3E%3C/svg%3E") repeat; background-size:300px 300px; will-change:transform}
+header{padding:2.5rem 1rem .5rem}
+header .date{margin:0}
+.motto{margin-top:1.75rem; padding:0 1rem}
+h1{
+  font-family:"Times New Roman", Times, serif;
+  font-style:italic; font-weight:700; margin:0; line-height:1.15;
+  font-size:clamp(2.2rem, 9.5vw, 5.6rem);
+  padding:0 .25em .2em 0;
+  color:#ff3b3b;
+  -webkit-animation:layers 2.1s steps(1,end) infinite, blink .7s ease-in-out infinite;
+  animation:layers 2.1s steps(1,end) infinite, blink .7s ease-in-out infinite;
+}
+@-webkit-keyframes layers{
+  0%{color:#ff3b3b;text-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+  14%{color:#ff9f1c;text-shadow:3px 3px 0 #ffe23b, 6px 6px 0 #3bd16f, 9px 9px 0 #3ba8ff, 12px 12px 0 #8a5bff, 15px 15px 0 #ff3bd4, 17px 17px 12px rgba(0,0,0,.45)}
+  29%{color:#ffe23b;text-shadow:3px 3px 0 #3bd16f, 6px 6px 0 #3ba8ff, 9px 9px 0 #8a5bff, 12px 12px 0 #ff3bd4, 15px 15px 0 #ff3b3b, 17px 17px 12px rgba(0,0,0,.45)}
+  43%{color:#3bd16f;text-shadow:3px 3px 0 #3ba8ff, 6px 6px 0 #8a5bff, 9px 9px 0 #ff3bd4, 12px 12px 0 #ff3b3b, 15px 15px 0 #ff9f1c, 17px 17px 12px rgba(0,0,0,.45)}
+  57%{color:#3ba8ff;text-shadow:3px 3px 0 #8a5bff, 6px 6px 0 #ff3bd4, 9px 9px 0 #ff3b3b, 12px 12px 0 #ff9f1c, 15px 15px 0 #ffe23b, 17px 17px 12px rgba(0,0,0,.45)}
+  71%{color:#8a5bff;text-shadow:3px 3px 0 #ff3bd4, 6px 6px 0 #ff3b3b, 9px 9px 0 #ff9f1c, 12px 12px 0 #ffe23b, 15px 15px 0 #3bd16f, 17px 17px 12px rgba(0,0,0,.45)}
+  86%{color:#ff3bd4;text-shadow:3px 3px 0 #ff3b3b, 6px 6px 0 #ff9f1c, 9px 9px 0 #ffe23b, 12px 12px 0 #3bd16f, 15px 15px 0 #3ba8ff, 17px 17px 12px rgba(0,0,0,.45)}
+  100%{color:#ff3b3b;text-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+}
+@keyframes layers{
+  0%{color:#ff3b3b;text-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+  14%{color:#ff9f1c;text-shadow:3px 3px 0 #ffe23b, 6px 6px 0 #3bd16f, 9px 9px 0 #3ba8ff, 12px 12px 0 #8a5bff, 15px 15px 0 #ff3bd4, 17px 17px 12px rgba(0,0,0,.45)}
+  29%{color:#ffe23b;text-shadow:3px 3px 0 #3bd16f, 6px 6px 0 #3ba8ff, 9px 9px 0 #8a5bff, 12px 12px 0 #ff3bd4, 15px 15px 0 #ff3b3b, 17px 17px 12px rgba(0,0,0,.45)}
+  43%{color:#3bd16f;text-shadow:3px 3px 0 #3ba8ff, 6px 6px 0 #8a5bff, 9px 9px 0 #ff3bd4, 12px 12px 0 #ff3b3b, 15px 15px 0 #ff9f1c, 17px 17px 12px rgba(0,0,0,.45)}
+  57%{color:#3ba8ff;text-shadow:3px 3px 0 #8a5bff, 6px 6px 0 #ff3bd4, 9px 9px 0 #ff3b3b, 12px 12px 0 #ff9f1c, 15px 15px 0 #ffe23b, 17px 17px 12px rgba(0,0,0,.45)}
+  71%{color:#8a5bff;text-shadow:3px 3px 0 #ff3bd4, 6px 6px 0 #ff3b3b, 9px 9px 0 #ff9f1c, 12px 12px 0 #ffe23b, 15px 15px 0 #3bd16f, 17px 17px 12px rgba(0,0,0,.45)}
+  86%{color:#ff3bd4;text-shadow:3px 3px 0 #ff3b3b, 6px 6px 0 #ff9f1c, 9px 9px 0 #ffe23b, 12px 12px 0 #3bd16f, 15px 15px 0 #3ba8ff, 17px 17px 12px rgba(0,0,0,.45)}
+  100%{color:#ff3b3b;text-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+}
+@-webkit-keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.underline{
+  height:6px; width:min(86%,700px); margin:.6rem auto 1.4rem; border-radius:3px;
+  background:#ff3b3b;
+  -webkit-animation:linelayers 2.1s steps(1,end) infinite, blink .7s ease-in-out infinite;
+  animation:linelayers 2.1s steps(1,end) infinite, blink .7s ease-in-out infinite;
+}
+@-webkit-keyframes linelayers{
+  0%{background:#ff3b3b;box-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+  14%{background:#ff9f1c;box-shadow:3px 3px 0 #ffe23b, 6px 6px 0 #3bd16f, 9px 9px 0 #3ba8ff, 12px 12px 0 #8a5bff, 15px 15px 0 #ff3bd4, 17px 17px 12px rgba(0,0,0,.45)}
+  29%{background:#ffe23b;box-shadow:3px 3px 0 #3bd16f, 6px 6px 0 #3ba8ff, 9px 9px 0 #8a5bff, 12px 12px 0 #ff3bd4, 15px 15px 0 #ff3b3b, 17px 17px 12px rgba(0,0,0,.45)}
+  43%{background:#3bd16f;box-shadow:3px 3px 0 #3ba8ff, 6px 6px 0 #8a5bff, 9px 9px 0 #ff3bd4, 12px 12px 0 #ff3b3b, 15px 15px 0 #ff9f1c, 17px 17px 12px rgba(0,0,0,.45)}
+  57%{background:#3ba8ff;box-shadow:3px 3px 0 #8a5bff, 6px 6px 0 #ff3bd4, 9px 9px 0 #ff3b3b, 12px 12px 0 #ff9f1c, 15px 15px 0 #ffe23b, 17px 17px 12px rgba(0,0,0,.45)}
+  71%{background:#8a5bff;box-shadow:3px 3px 0 #ff3bd4, 6px 6px 0 #ff3b3b, 9px 9px 0 #ff9f1c, 12px 12px 0 #ffe23b, 15px 15px 0 #3bd16f, 17px 17px 12px rgba(0,0,0,.45)}
+  86%{background:#ff3bd4;box-shadow:3px 3px 0 #ff3b3b, 6px 6px 0 #ff9f1c, 9px 9px 0 #ffe23b, 12px 12px 0 #3bd16f, 15px 15px 0 #3ba8ff, 17px 17px 12px rgba(0,0,0,.45)}
+  100%{background:#ff3b3b;box-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+}
+@keyframes linelayers{
+  0%{background:#ff3b3b;box-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+  14%{background:#ff9f1c;box-shadow:3px 3px 0 #ffe23b, 6px 6px 0 #3bd16f, 9px 9px 0 #3ba8ff, 12px 12px 0 #8a5bff, 15px 15px 0 #ff3bd4, 17px 17px 12px rgba(0,0,0,.45)}
+  29%{background:#ffe23b;box-shadow:3px 3px 0 #3bd16f, 6px 6px 0 #3ba8ff, 9px 9px 0 #8a5bff, 12px 12px 0 #ff3bd4, 15px 15px 0 #ff3b3b, 17px 17px 12px rgba(0,0,0,.45)}
+  43%{background:#3bd16f;box-shadow:3px 3px 0 #3ba8ff, 6px 6px 0 #8a5bff, 9px 9px 0 #ff3bd4, 12px 12px 0 #ff3b3b, 15px 15px 0 #ff9f1c, 17px 17px 12px rgba(0,0,0,.45)}
+  57%{background:#3ba8ff;box-shadow:3px 3px 0 #8a5bff, 6px 6px 0 #ff3bd4, 9px 9px 0 #ff3b3b, 12px 12px 0 #ff9f1c, 15px 15px 0 #ffe23b, 17px 17px 12px rgba(0,0,0,.45)}
+  71%{background:#8a5bff;box-shadow:3px 3px 0 #ff3bd4, 6px 6px 0 #ff3b3b, 9px 9px 0 #ff9f1c, 12px 12px 0 #ffe23b, 15px 15px 0 #3bd16f, 17px 17px 12px rgba(0,0,0,.45)}
+  86%{background:#ff3bd4;box-shadow:3px 3px 0 #ff3b3b, 6px 6px 0 #ff9f1c, 9px 9px 0 #ffe23b, 12px 12px 0 #3bd16f, 15px 15px 0 #3ba8ff, 17px 17px 12px rgba(0,0,0,.45)}
+  100%{background:#ff3b3b;box-shadow:3px 3px 0 #ff9f1c, 6px 6px 0 #ffe23b, 9px 9px 0 #3bd16f, 12px 12px 0 #3ba8ff, 15px 15px 0 #8a5bff, 17px 17px 12px rgba(0,0,0,.45)}
+}
+@keyframes rainbow{to{background-position:300% 0}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 0 transparent)}50%{filter:drop-shadow(0 0 14px rgba(255,255,255,.55))}}
+
+.gifwrap{margin:1.75rem auto 0; padding:0 1rem}
+.gif{display:block; margin:0 auto; width:min(92vw,560px); height:auto; box-shadow:0 10px 30px rgba(0,0,0,.45)}
+@keyframes flash{0%,100%{opacity:1}50%{opacity:.45}}
+.tribute{position:relative; margin:1.5rem auto 0; width:min(92vw,520px); aspect-ratio:1/1}
+.tribute svg{width:100%; height:100%; display:block}
+.beam{animation:pulse 3s ease-in-out infinite; transform-origin:bottom}
+.beam.b2{animation-delay:.4s}
+@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+
+.date{
+  font-family:"Times New Roman", Times, serif; font-style:italic; font-weight:700;
+  font-size:clamp(3rem,15vw,6.5rem); line-height:1.1; margin:1rem 0 0; padding-right:.3em;
+  color:#fff;
+  -webkit-animation:bwlayers 1.8s steps(1,end) infinite, blink .7s ease-in-out infinite;
+  animation:bwlayers 1.8s steps(1,end) infinite, blink .7s ease-in-out infinite;
+}
+@-webkit-keyframes bwlayers{
+  0%{color:#ffffff;text-shadow:3px 3px 0 #000000, 6px 6px 0 #d0d0d0, 9px 9px 0 #222222, 12px 12px 0 #a8a8a8, 15px 15px 8px rgba(0,0,0,.4)}
+  17%{color:#000000;text-shadow:3px 3px 0 #d0d0d0, 6px 6px 0 #222222, 9px 9px 0 #a8a8a8, 12px 12px 0 #000000, 15px 15px 8px rgba(0,0,0,.4)}
+  33%{color:#d0d0d0;text-shadow:3px 3px 0 #222222, 6px 6px 0 #a8a8a8, 9px 9px 0 #000000, 12px 12px 0 #ffffff, 15px 15px 8px rgba(0,0,0,.4)}
+  50%{color:#222222;text-shadow:3px 3px 0 #a8a8a8, 6px 6px 0 #000000, 9px 9px 0 #ffffff, 12px 12px 0 #000000, 15px 15px 8px rgba(0,0,0,.4)}
+  67%{color:#a8a8a8;text-shadow:3px 3px 0 #000000, 6px 6px 0 #ffffff, 9px 9px 0 #000000, 12px 12px 0 #d0d0d0, 15px 15px 8px rgba(0,0,0,.4)}
+  83%{color:#000000;text-shadow:3px 3px 0 #ffffff, 6px 6px 0 #000000, 9px 9px 0 #d0d0d0, 12px 12px 0 #222222, 15px 15px 8px rgba(0,0,0,.4)}
+  100%{color:#ffffff;text-shadow:3px 3px 0 #000000, 6px 6px 0 #d0d0d0, 9px 9px 0 #222222, 12px 12px 0 #a8a8a8, 15px 15px 8px rgba(0,0,0,.4)}
+}
+@keyframes bwlayers{
+  0%{color:#ffffff;text-shadow:3px 3px 0 #000000, 6px 6px 0 #d0d0d0, 9px 9px 0 #222222, 12px 12px 0 #a8a8a8, 15px 15px 8px rgba(0,0,0,.4)}
+  17%{color:#000000;text-shadow:3px 3px 0 #d0d0d0, 6px 6px 0 #222222, 9px 9px 0 #a8a8a8, 12px 12px 0 #000000, 15px 15px 8px rgba(0,0,0,.4)}
+  33%{color:#d0d0d0;text-shadow:3px 3px 0 #222222, 6px 6px 0 #a8a8a8, 9px 9px 0 #000000, 12px 12px 0 #ffffff, 15px 15px 8px rgba(0,0,0,.4)}
+  50%{color:#222222;text-shadow:3px 3px 0 #a8a8a8, 6px 6px 0 #000000, 9px 9px 0 #ffffff, 12px 12px 0 #000000, 15px 15px 8px rgba(0,0,0,.4)}
+  67%{color:#a8a8a8;text-shadow:3px 3px 0 #000000, 6px 6px 0 #ffffff, 9px 9px 0 #000000, 12px 12px 0 #d0d0d0, 15px 15px 8px rgba(0,0,0,.4)}
+  83%{color:#000000;text-shadow:3px 3px 0 #ffffff, 6px 6px 0 #000000, 9px 9px 0 #d0d0d0, 12px 12px 0 #222222, 15px 15px 8px rgba(0,0,0,.4)}
+  100%{color:#ffffff;text-shadow:3px 3px 0 #000000, 6px 6px 0 #d0d0d0, 9px 9px 0 #222222, 12px 12px 0 #a8a8a8, 15px 15px 8px rgba(0,0,0,.4)}
+}
+.lede{max-width:34rem; margin:.75rem auto 0; padding:0 1.25rem; color:var(--muted); line-height:1.75; font-style:italic}
+
+.flagwrap{margin:2rem auto 2.5rem; width:min(50vw,200px)}
+.flaggif{display:block; width:100%; height:auto; margin:0 auto; }
+.flag{width:100%; height:auto; display:block; filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))}
+.flag .stripes,.flag .canton{animation:wave 2.2s ease-in-out infinite}
+@keyframes wave{
+  0%,100%{transform:skewY(0deg) scaleY(1)}
+  25%{transform:skewY(2deg) scaleY(.97)}
+  75%{transform:skewY(-2deg) scaleY(1.02)}
+}
+.flag .ripple{animation:ripple 2.2s linear infinite}
+@keyframes ripple{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+
+footer .note{margin:.6rem 0 0; font-style:italic; font-size:.6rem; text-align:left; color:#9aa0a8; opacity:.45}
+footer{padding:1rem 1rem 1.5rem; margin-top:2rem; border-top:1px solid rgba(255,255,255,.25); color:var(--muted); font-size:.85rem}
+
+</style>
+</head>
+<body>
+<div id="stars" aria-hidden="true"></div>
+<header>
+  <p class="date">09.11.01</p>
+</header>
+
+<main>
+  <div class="gifwrap">
+    <img class="gif" src="images/tower.gif" alt="The World Trade Center towers on September 11, 2001" width="320" height="180">
+  </div>
+
+  <div class="motto">
+    <h1>WE WILL NEVER FORGET</h1>
+    <div class="underline" aria-hidden="true"></div>
+  </div>
+
+  <div class="flagwrap">
+    <img class="flaggif" src="images/flag.gif" alt="Waving American flag">
+  </div>
+</main>
+
+<footer>&copy; 2026 All rights reserved.<p class="note">For satirical use only.</p></footer>
+<script>
+(function(){
+  var s=document.getElementById('stars'), t=false;
+  function move(){ s.style.transform='translate3d(0,'+(-window.scrollY*0.4 % 300)+'px,0)'; t=false; }
+  window.addEventListener('scroll',function(){ if(!t){ t=true; requestAnimationFrame(move); } },{passive:true});
+  move();
+})();
+</script>
+</body>
+</html>
